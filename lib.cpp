@@ -14,7 +14,9 @@ bool comparaRiga (char listaNomi[10][20], char mioNome[1][20], int &i){
         if (listaNomi[i][j]!=mioNome[0][j]){
             return false;
         } else {
-            return true;
+            if (j==19) {
+                return true;
+            }
         }
     }
 }
